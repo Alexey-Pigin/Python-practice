@@ -1,0 +1,160 @@
+print("Hello world")
+a=10
+b=28
+d=-270
+e=12
+f=-1000
+max=a
+if max<b:
+  max=b
+elif max<d:
+  max=d
+elif max<e:
+  max=e
+elif max<f:
+  max=f
+print("max=", max)
+
+a = 5
+b = 3
+print('a = ',a)
+c = a + b
+print('c =',c)
+
+a = 5
+b = 3
+c = a * b
+print('a + c =',a + c)
+print('a =',a )
+print('b =',b)
+if a > b :
+  print('a > b')
+else:
+  print('a < b')
+
+a = 5
+b = 12
+c = 8
+max = 0
+print('a =',a )
+print('b =',b)
+print('c =',c)
+if max < a:
+  max =a
+if max < b:
+  max = b
+if max < c:
+    max = c
+print('max =',max)
+
+a = 77
+b = 12
+c = 22
+max = a
+print('a =',a )
+print('b =',b)
+print('c =',c)
+if max < b:
+  max = b
+if max < c:
+    max = c
+print('max =',max)
+
+a = 1
+b = 0
+c = -10
+d = 6
+e = 5
+max = a
+print('a =',a )
+print('b =',b)
+print('c =',c)
+print('d =',d)
+print('e =',e)
+if max < b:
+  max = b
+if max < c:
+    max = c
+if max < d:
+  max = d
+if max < e:
+    max = e
+print('max =',max)
+
+a = 0
+b = 12
+c = 10
+print('a =',a )
+print('b =',b)
+print('c =',c)
+if a > b:
+    if a > c:
+        print('max =',a)
+    else:
+        print('max =',c)
+else:
+    if b > c:
+        print('max =',b)
+print("сравнение 3 чисел сокращенно")
+a = 25
+b = 12
+c = 33
+print('a =',a )
+print('b =',b)
+print('c =',c)
+if a > b:
+    if a > c:
+        print('max =',a)
+    else:
+        print('max =',c)
+elif b > c:
+        print('max =',b)
+
+print("таблица с праздником и температурой")
+prazdnik = False
+temperature = -30
+age = 10
+age_limit = 11
+temperature_limit = -27
+if prazdnik == True:
+    print('frends')
+elif temperature > temperature_limit:
+    print('to school')
+elif age < age_limit:
+    print('home')
+else:
+    print('to scool go it')
+
+print("собака и друзья(сколько собака добежит до друзй раз)")
+friend1_speed = 4
+friend2_speed = 5
+dog_speed = 10
+distance = 1000                                    #Дистанция между людьми
+distance_limit = 10
+dog_counter = 0
+dog_direction = 1
+while distance > distance_limit:
+    speed = 0                                      #Переменная скорости
+    if dog_direction == 1:
+        speed = friend1_speed + dog_speed
+        dog_direction = 2
+    else:
+        speed = friend2_speed + dog_speed
+        dog_direction = 1
+    time_to_meet = distance / speed                #Время до встречи с другом
+    distance = distance - time_to_meet * (friend1_speed + friend2_speed)
+    dog_counter = dog_counter + 1
+    print("distance =", distance)                  #Показывает расстояние до человека
+print('count =', dog_counter)
+
+print("Среднее арифметическое")
+numbers = [2, 5, 13, 7, 6, 4]
+size = len(numbers)
+index = 0
+avg = 0
+sum = 0
+while index < size:
+  sum = sum + numbers[index]
+  index+=1
+avg = sum / size
+print(avg)
